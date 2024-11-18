@@ -1,0 +1,35 @@
+.companies{
+    &__img{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 121px;
+        margin-top: 224px;
+        justify-content: center;
+    }
+    &__img img{
+        width: 200px;
+    }
+}
+
+@include mobile{
+    .companies{
+        width: 100%;
+
+        &__img{
+            flex-direction: column;
+            margin-left: 200px;
+        }
+        &__img img{
+            width: 331px;
+        }
+    }
+}
+
+@include tablet{
+    .companies{
+        width: 100%;
+        &__img{
+            margin-top: 200px;
+        }
+    }
+}

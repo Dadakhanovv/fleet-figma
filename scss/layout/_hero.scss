@@ -1,0 +1,59 @@
+.hero{
+    margin: 0 auto;
+
+    &__container{
+        background-image: url(/assets/images/hero__img.png);
+        border-radius: 20px;
+        height: 708px;
+    }
+    &__wrapper{
+        text-align: center;
+        margin-top: 167px;
+    }
+    &__title{
+        font-size: 96px;
+        font-weight: 700;
+    }
+    &__info{
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    &__btn{
+        padding: 12px 16px;
+        border: 2px solid black;
+        border-radius: 90px;
+        border-color: #E6E8EC;
+        font-size: 14px;
+        font-weight: 700;
+        transition: 0.3s ease-in-out;
+    }
+    &__btn:hover{
+        color: white;
+        background-color: #3B71FE;
+        border: 2px solid rgba(0, 0, 0, 0);
+    }
+}
+
+@include mobile{
+    .hero{
+        width: 100%;
+
+        &__wrapper{
+            width: 296px;
+            margin: 0  auto;
+            margin-top: 48px;
+        }
+    }
+}
+
+@include tablet{
+    .hero{
+        width: 100%;
+
+        &__wrapper{
+            width: 100% ;
+            margin-top: 125px;
+        }
+    }
+}

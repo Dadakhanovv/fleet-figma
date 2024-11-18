@@ -1,0 +1,33 @@
+.container{
+    width: 1120px;
+    margin: 0 auto;
+    border: 1px ;
+    min-width: 375px;
+}
+
+.hero__container{
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    min-width: 375px;
+}
+
+@include mobile(){
+    .hero__container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .container{
+        width: 100%;
+        padding: 0 32px;
+    }
+}
+
+@include tablet() {
+    .hero__container{
+        width: 944px;
+    }
+    .container{
+        width: 864px;
+    }
+}
